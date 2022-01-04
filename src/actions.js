@@ -19,7 +19,7 @@ export const set = (amount = 100) => {
     }
 };
 
-// async function
+// async function using thunk
 
 export const fetchPosts = () => {
     return async (dispatch, getState) => {
@@ -30,7 +30,7 @@ export const fetchPosts = () => {
         // console.log('postes');
         // we don't return action object from inner function ,instead call dispatch function with action object
         dispatch({
-            type: 'FETCH_POSTS',
+            type: 'FETCH_USERS',
             payload: data
         })
     }

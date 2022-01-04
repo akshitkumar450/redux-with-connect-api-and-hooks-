@@ -12,7 +12,7 @@ export const decrement = (amount = 1) => {
     };
 };
 
-export const set = (amount) => {
+export const set = (amount = 100) => {
     return {
         type: 'SET',
         payload: amount
